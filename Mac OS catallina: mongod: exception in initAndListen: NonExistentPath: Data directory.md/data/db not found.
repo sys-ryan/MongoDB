@@ -1,0 +1,17 @@
+MacOS catalina 'mongod' error (/data/db)
+
+
+Create the data/db folder
+```
+sudo mkdir -p /System/VOlumes/Data/data/db
+```
+
+Give permissions
+```
+sudo chown -R id -un /System/Volumes/Data/data/db
+```
+
+Change dbpath of mongodb and run
+```
+mongod --dbpath=/System/VOlumes/Data/data/db
+```
